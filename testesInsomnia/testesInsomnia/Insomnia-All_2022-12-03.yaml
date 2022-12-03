@@ -1,0 +1,1257 @@
+_type: export
+__export_format: 4
+__export_date: 2022-12-03T21:05:02.544Z
+__export_source: insomnia.desktop.app:v2022.6.0
+resources:
+  - _id: req_6a8c998f514649358ac41a2764529ff5
+    parentId: fld_5b5f0804ab024963b9b5767bd055e654
+    modified: 1670100002134
+    created: 1670098589220
+    url: http://localhost:3000/clientes
+    name: Listar
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1670099001826
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_5b5f0804ab024963b9b5767bd055e654
+    parentId: fld_f68db68325c74ecd9fd76c64e1433476
+    modified: 1670098821625
+    created: 1670098812207
+    name: clientes
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1670098589270
+    _type: request_group
+  - _id: fld_f68db68325c74ecd9fd76c64e1433476
+    parentId: wrk_b23b14227f684adbb0fccfce677948a2
+    modified: 1670098635162
+    created: 1670098635162
+    name: Insomnia(cafeteria-jsonserver)
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1670098635162
+    _type: request_group
+  - _id: wrk_b23b14227f684adbb0fccfce677948a2
+    parentId: null
+    modified: 1670098298748
+    created: 1670098298748
+    name: New Document
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_2460a7fd650840ce83d744549b617796
+    parentId: fld_5b5f0804ab024963b9b5767bd055e654
+    modified: 1670100977829
+    created: 1670099001776
+    url: http://localhost:3000/clientes
+    name: Criar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        		"nome": "Joana Dark",
+        		"email": "joanadark@gmail.com",
+        		"nascimento": "2022-01-04"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001776
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ebe2fa28c30443e1a70ab47161ed2b54
+    parentId: fld_5b5f0804ab024963b9b5767bd055e654
+    modified: 1670100981023
+    created: 1670099220278
+    url: http://localhost:3000/clientes/4
+    name: Editar
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"nome": "Joana Dark Maria Vasconcelos",
+        		"email": "joanadark@gmail.com",
+        		"nascimento": "2022-01-04"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001726
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0d734dc7db434bd694b340dcefa6b8f7
+    parentId: fld_5b5f0804ab024963b9b5767bd055e654
+    modified: 1670100013874
+    created: 1670099413828
+    url: http://localhost:3000/clientes/4
+    name: Deletar
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001676
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_65bdf91a11dd45d8beba64208f9a59f1
+    parentId: fld_6ce06cd65db14fcb8edcb26f284e45b6
+    modified: 1670100036600
+    created: 1670099941134
+    url: http://localhost:3000/produtos
+    name: Listar
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1670099001826
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_6ce06cd65db14fcb8edcb26f284e45b6
+    parentId: fld_f68db68325c74ecd9fd76c64e1433476
+    modified: 1670099941126
+    created: 1670099941126
+    name: produtos
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1670098589220
+    _type: request_group
+  - _id: req_ee3ffb51e36042578a814c600912de86
+    parentId: fld_6ce06cd65db14fcb8edcb26f284e45b6
+    modified: 1670100994411
+    created: 1670099941141
+    url: http://localhost:3000/produtos
+    name: Criar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        		"nome": "Milk Shake",
+        		"preco": "R$ 3,00"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001776
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2b99e36eadec48ac9442f84e428d85b8
+    parentId: fld_6ce06cd65db14fcb8edcb26f284e45b6
+    modified: 1670100997612
+    created: 1670099941149
+    url: http://localhost:3000/produtos/4
+    name: Editar
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"nome": "Milk Shake Duplo",
+        		"preco": "R$ 7,00"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001726
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9407b58ab81947749663d542c877d25d
+    parentId: fld_6ce06cd65db14fcb8edcb26f284e45b6
+    modified: 1670100146391
+    created: 1670099941154
+    url: http://localhost:3000/produtos/4
+    name: Deletar
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001676
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8bca820c7e934c59a44598dc6705ade2
+    parentId: fld_40e1b52845a24b11aafb761fa1f1b225
+    modified: 1670100328848
+    created: 1670100303903
+    url: http://localhost:3000/entregadores
+    name: Listar
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1670099001826
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_40e1b52845a24b11aafb761fa1f1b225
+    parentId: fld_f68db68325c74ecd9fd76c64e1433476
+    modified: 1670100303900
+    created: 1670100303900
+    name: entregadores
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1670098589170
+    _type: request_group
+  - _id: req_ba9e1002dc834e1abbe41200a36deb5e
+    parentId: fld_40e1b52845a24b11aafb761fa1f1b225
+    modified: 1670101010836
+    created: 1670100303910
+    url: http://localhost:3000/entregadores
+    name: Criar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        		"nome": "Walber",
+        		"email": "walber@gmail.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001776
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_79ea63f4990d4129b1b86b32ca75ae7d
+    parentId: fld_40e1b52845a24b11aafb761fa1f1b225
+    modified: 1670101013951
+    created: 1670100303916
+    url: http://localhost:3000/entregadores/4
+    name: Editar
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"nome": "Walber Júlio Drummond",
+        		"email": "walber@gmail.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001726
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2ad5a33d5afc414ba6dedc614ae9a999
+    parentId: fld_40e1b52845a24b11aafb761fa1f1b225
+    modified: 1670100448003
+    created: 1670100303926
+    url: http://localhost:3000/entregadores/4
+    name: Deletar
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001676
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_732270332d4e436c860997a45b380f43
+    parentId: fld_30ffd7d494c24c1eb2b4939e87611b4d
+    modified: 1670100499282
+    created: 1670100487492
+    url: http://localhost:3000/funcionarios
+    name: Listar
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1670099001826
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_30ffd7d494c24c1eb2b4939e87611b4d
+    parentId: fld_f68db68325c74ecd9fd76c64e1433476
+    modified: 1670100487489
+    created: 1670100487489
+    name: funcionarios
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1670098589120
+    _type: request_group
+  - _id: req_bc2190dab661434995933f1433d65801
+    parentId: fld_30ffd7d494c24c1eb2b4939e87611b4d
+    modified: 1670101049453
+    created: 1670100487498
+    url: http://localhost:3000/funcionarios
+    name: Criar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        		"nome": "Daniel",
+        		"email": "daniel@gmail.com",
+        		"cpf": "000.999.888-66"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001776
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_79ba2c06ee9a44e5922f2e67fc818410
+    parentId: fld_30ffd7d494c24c1eb2b4939e87611b4d
+    modified: 1670101056270
+    created: 1670100487506
+    url: http://localhost:3000/funcionarios/4
+    name: Editar
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"nome": "Daniel da Silva Barbosa",
+        		"email": "daniel@gmail.com",
+        		"cpf": "000.999.888-66"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001726
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6bb2871be14f427ab23f655d50bef393
+    parentId: fld_30ffd7d494c24c1eb2b4939e87611b4d
+    modified: 1670100618573
+    created: 1670100487515
+    url: http://localhost:3000/funcionarios/4
+    name: Deletar
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001676
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_177d8eb1dd8d4bb9b4f1c06935ae7bb3
+    parentId: fld_277e9d93c5814e1b960cae3ba5beb917
+    modified: 1670100649255
+    created: 1670100639629
+    url: http://localhost:3000/fornecedores
+    name: Listar
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1670099001826
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_277e9d93c5814e1b960cae3ba5beb917
+    parentId: fld_f68db68325c74ecd9fd76c64e1433476
+    modified: 1670100639624
+    created: 1670100639624
+    name: fornecedores
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1670098589070
+    _type: request_group
+  - _id: req_2bbb6ffc68f046ce963cd87e165f8b71
+    parentId: fld_277e9d93c5814e1b960cae3ba5beb917
+    modified: 1670101095563
+    created: 1670100639638
+    url: http://localhost:3000/fornecedores
+    name: Criar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        		"nome": "Nestlê",
+        		"email": "nestle@gmail.com",
+        		"cnpj": "000.999.000001-66"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001776
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3192e225e86c42a5878a6927bb547445
+    parentId: fld_277e9d93c5814e1b960cae3ba5beb917
+    modified: 1670101101828
+    created: 1670100639645
+    url: http://localhost:3000/fornecedores/4
+    name: Editar
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"nome": "Nestlê S.A. do Brasil",
+        		"email": "nestle@gmail.com",
+        		"cnpj": "000.999.000001-66"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001726
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_17bcd57727b544cdbe72678f0bca5072
+    parentId: fld_277e9d93c5814e1b960cae3ba5beb917
+    modified: 1670100800584
+    created: 1670100639652
+    url: http://localhost:3000/fornecedores/4
+    name: Deletar
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001676
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_55e52b1827f44d68b19d72b7e4268ba3
+    parentId: fld_d55cf51fc16e458aaf2e7a3221bdef79
+    modified: 1670101331449
+    created: 1670101331449
+    url: http://localhost:3000/clientes
+    name: Listar
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1670099001826
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_d55cf51fc16e458aaf2e7a3221bdef79
+    parentId: fld_3f75255594684e9b9de2b472c7fdf5b2
+    modified: 1670101331446
+    created: 1670101331446
+    name: clientes
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1670098589270
+    _type: request_group
+  - _id: fld_3f75255594684e9b9de2b472c7fdf5b2
+    parentId: wrk_16c39ed9a2e140f1b74b0f598a6709eb
+    modified: 1670101331443
+    created: 1670101331443
+    name: Insomnia(cafeteria-jsonserver)
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1670098635162
+    _type: request_group
+  - _id: wrk_16c39ed9a2e140f1b74b0f598a6709eb
+    parentId: null
+    modified: 1670101331415
+    created: 1670101331415
+    name: Testes Insomnia
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_1c336567a7024c3297fc2bdb5ca94c96
+    parentId: fld_d55cf51fc16e458aaf2e7a3221bdef79
+    modified: 1670101368787
+    created: 1670101331456
+    url: http://localhost:3000/clientes
+    name: Criar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        		"nome": "Joana Dark",
+        		"email": "joanadark@gmail.com",
+        		"nascimento": "2022-01-04"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001776
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4470377d48fa4453942e1d59137ae8a0
+    parentId: fld_d55cf51fc16e458aaf2e7a3221bdef79
+    modified: 1670101370187
+    created: 1670101331462
+    url: http://localhost:3000/clientes/4
+    name: Editar
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"nome": "Joana Dark Maria Vasconcelos",
+        		"email": "joanadark@gmail.com",
+        		"nascimento": "2022-01-04"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001726
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c2c656bd56be46ccab3ee877f7344432
+    parentId: fld_d55cf51fc16e458aaf2e7a3221bdef79
+    modified: 1670101331469
+    created: 1670101331469
+    url: http://localhost:3000/clientes/4
+    name: Deletar
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001676
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5fa78288a1994c2fb2dad1ba3ff47c7d
+    parentId: fld_ba765b73e05a4ab28c2a27feef6ad7bd
+    modified: 1670101331480
+    created: 1670101331480
+    url: http://localhost:3000/produtos
+    name: Listar
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1670099001826
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_ba765b73e05a4ab28c2a27feef6ad7bd
+    parentId: fld_3f75255594684e9b9de2b472c7fdf5b2
+    modified: 1670101331476
+    created: 1670101331476
+    name: produtos
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1670098589220
+    _type: request_group
+  - _id: req_d472314db12c42648d6e7a91968996d1
+    parentId: fld_ba765b73e05a4ab28c2a27feef6ad7bd
+    modified: 1670101331489
+    created: 1670101331489
+    url: http://localhost:3000/produtos
+    name: Criar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        		"nome": "Milk Shake",
+        		"preco": "R$ 3,00"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001776
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_564fe41bba5340548839bd1eb6e38c25
+    parentId: fld_ba765b73e05a4ab28c2a27feef6ad7bd
+    modified: 1670101331496
+    created: 1670101331496
+    url: http://localhost:3000/produtos/4
+    name: Editar
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"nome": "Milk Shake Duplo",
+        		"preco": "R$ 7,00"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001726
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0e45d95d52c6476cbd1ffd510fc6d272
+    parentId: fld_ba765b73e05a4ab28c2a27feef6ad7bd
+    modified: 1670101331504
+    created: 1670101331504
+    url: http://localhost:3000/produtos/4
+    name: Deletar
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001676
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6de00863e91c4cfd9e54e05c543d2ab3
+    parentId: fld_cd357bb97bb84c959f76b70c06895b1a
+    modified: 1670101331519
+    created: 1670101331519
+    url: http://localhost:3000/entregadores
+    name: Listar
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1670099001826
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_cd357bb97bb84c959f76b70c06895b1a
+    parentId: fld_3f75255594684e9b9de2b472c7fdf5b2
+    modified: 1670101331515
+    created: 1670101331515
+    name: entregadores
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1670098589170
+    _type: request_group
+  - _id: req_41718df3c33a46a9a7276cc04f6b3b06
+    parentId: fld_cd357bb97bb84c959f76b70c06895b1a
+    modified: 1670101331524
+    created: 1670101331524
+    url: http://localhost:3000/entregadores
+    name: Criar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        		"nome": "Walber",
+        		"email": "walber@gmail.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001776
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ce23176f79fb4b569d1ccabb052d0864
+    parentId: fld_cd357bb97bb84c959f76b70c06895b1a
+    modified: 1670101331531
+    created: 1670101331531
+    url: http://localhost:3000/entregadores/4
+    name: Editar
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"nome": "Walber Júlio Drummond",
+        		"email": "walber@gmail.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001726
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_dae60737698944d7bb74be2eb9050c49
+    parentId: fld_cd357bb97bb84c959f76b70c06895b1a
+    modified: 1670101331537
+    created: 1670101331537
+    url: http://localhost:3000/entregadores/4
+    name: Deletar
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001676
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_12a550d187e94bf09184a184af7a1da3
+    parentId: fld_d30e78879ae1462c9cdb016f7e830a5d
+    modified: 1670101331549
+    created: 1670101331549
+    url: http://localhost:3000/funcionarios
+    name: Listar
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1670099001826
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_d30e78879ae1462c9cdb016f7e830a5d
+    parentId: fld_3f75255594684e9b9de2b472c7fdf5b2
+    modified: 1670101331545
+    created: 1670101331545
+    name: funcionarios
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1670098589120
+    _type: request_group
+  - _id: req_c393f242d2934e23aa1c4ba5a6e76b1d
+    parentId: fld_d30e78879ae1462c9cdb016f7e830a5d
+    modified: 1670101331555
+    created: 1670101331555
+    url: http://localhost:3000/funcionarios
+    name: Criar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        		"nome": "Daniel",
+        		"email": "daniel@gmail.com",
+        		"cpf": "000.999.888-66"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001776
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f775b95f7b724db5a4ac98bc3aea168d
+    parentId: fld_d30e78879ae1462c9cdb016f7e830a5d
+    modified: 1670101331561
+    created: 1670101331561
+    url: http://localhost:3000/funcionarios/4
+    name: Editar
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"nome": "Daniel da Silva Barbosa",
+        		"email": "daniel@gmail.com",
+        		"cpf": "000.999.888-66"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001726
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c724f4e0158349f48f81334be5d9e9ea
+    parentId: fld_d30e78879ae1462c9cdb016f7e830a5d
+    modified: 1670101331565
+    created: 1670101331565
+    url: http://localhost:3000/funcionarios/4
+    name: Deletar
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001676
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1de36456bff24a20add50dbfca7848ac
+    parentId: fld_ad7d927b3467420ba5cd43b0f5494260
+    modified: 1670101331575
+    created: 1670101331575
+    url: http://localhost:3000/fornecedores
+    name: Listar
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1670099001826
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_ad7d927b3467420ba5cd43b0f5494260
+    parentId: fld_3f75255594684e9b9de2b472c7fdf5b2
+    modified: 1670101331572
+    created: 1670101331572
+    name: fornecedores
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1670098589070
+    _type: request_group
+  - _id: req_1dd818e2e4354315b0d3b748afd1492c
+    parentId: fld_ad7d927b3467420ba5cd43b0f5494260
+    modified: 1670101331579
+    created: 1670101331579
+    url: http://localhost:3000/fornecedores
+    name: Criar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        		"nome": "Nestlê",
+        		"email": "nestle@gmail.com",
+        		"cnpj": "000.999.000001-66"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001776
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7bee225e99064d458d3677e6b13b64e0
+    parentId: fld_ad7d927b3467420ba5cd43b0f5494260
+    modified: 1670101331584
+    created: 1670101331584
+    url: http://localhost:3000/fornecedores/4
+    name: Editar
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"nome": "Nestlê S.A. do Brasil",
+        		"email": "nestle@gmail.com",
+        		"cnpj": "000.999.000001-66"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001726
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7b2fa2f8734f4eca9b9400d1a602c6a9
+    parentId: fld_ad7d927b3467420ba5cd43b0f5494260
+    modified: 1670101331588
+    created: 1670101331588
+    url: http://localhost:3000/fornecedores/4
+    name: Deletar
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1670099001676
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_84d70e9937f4ad2ccc7f498ff54b9944904d0aef
+    parentId: wrk_b23b14227f684adbb0fccfce677948a2
+    modified: 1670098298970
+    created: 1670098298970
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1670098298970
+    _type: environment
+  - _id: jar_84d70e9937f4ad2ccc7f498ff54b9944904d0aef
+    parentId: wrk_b23b14227f684adbb0fccfce677948a2
+    modified: 1670098298975
+    created: 1670098298975
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_33e237e5364149d3b6efbd3612a724ad
+    parentId: wrk_b23b14227f684adbb0fccfce677948a2
+    modified: 1670098298946
+    created: 1670098298946
+    fileName: New Document
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_d7dbf51d240d4299a04ad101a5e2fa19
+    parentId: wrk_b23b14227f684adbb0fccfce677948a2
+    modified: 1670098298986
+    created: 1670098298986
+    name: Example Test Suite
+    _type: unit_test_suite
+  - _id: env_a250c91960f04ee0b4d99c4896b4820f
+    parentId: wrk_16c39ed9a2e140f1b74b0f598a6709eb
+    modified: 1670101331418
+    created: 1670101331418
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1670098298970
+    _type: environment
+  - _id: jar_4ee26c8013f64c318c3414efc6564d8d
+    parentId: wrk_16c39ed9a2e140f1b74b0f598a6709eb
+    modified: 1670101331426
+    created: 1670101331426
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_1acb4a20808b4011a4815b81217c42eb
+    parentId: wrk_16c39ed9a2e140f1b74b0f598a6709eb
+    modified: 1670101331619
+    created: 1670101331434
+    fileName: Testes Insomnia
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_cd4f5461ba7048bb99e790a65f9f59d3
+    parentId: wrk_16c39ed9a2e140f1b74b0f598a6709eb
+    modified: 1670101331597
+    created: 1670101331597
+    name: Example Test Suite
+    _type: unit_test_suite
